@@ -81,15 +81,27 @@ Notebook 1  →  Notebook 3  →  Notebook 4   (document classifier demo)
                            Notebook 5       (RAG chatbot)
 ```
 
-Notebook 2 is standalone and documents the fine-tuning experiment.
+Notebook 2 is standalone and documents the fine-tuning experiment. Currently, we do not have enough data and computing power to make the fine-tuning efficient. So we are relying on Few-Shot Learning  from Notebook 3. Once we able to fine tune the SLM and accuracy becomes better than that of Few-Shot learning, we will replace Notebook 3 by Notebook 2.
 
-### Quick start — RAG chatbot only
+### Quick start : RAG chatbot only
 
 If you already have a `extracted_chunks.csv` from Notebook 1, you can run Notebook 5 directly:
 
-1. Upload `extracted_chunks.csv` to `MyDrive/ANRF_Call/PoC/data/`
+1. Upload `extracted_chunks.csv` to `MyDrive/.../data/`
 2. Open `Notebook_5_RAG_Chatbot.ipynb` in Colab
 3. Set runtime to A100 GPU
 4. Run all cells — a public Gradio link appears at the end
+
+---
+## Results
+
+| Approach | Task | Accuracy | Training required |
+|---|---|---|---|
+| Zero-shot prompting | 8-class classification | 43.3% | None |
+| 8-shot few-shot prompting | 8-class classification | 53.3% | None |
+| LoRA fine-tuning (200 samples) | 8-class classification | 26.7% | ~10 min |
+| RAG generation | Question answering | Qualitative | None |
+
+The fine-tuning result (26.7%) demonstrates that a minimum labelled corpus of ~1,000 samples per class is required for effective SLM adaptation — a finding that motivates the data collection work in this project.
 
 ---
