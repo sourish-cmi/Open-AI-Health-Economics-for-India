@@ -153,6 +153,19 @@ Please open an issue before submitting a pull request.
 
 ---
 
+## Current Team
+
+1. Amiya R. Bhoumik, Institute of Chemical Technology, Mumbai
+2. Anirban Chakraborti, JNU, New Delhi
+3. Sourish Das, Chennai Mathematical Institute
+4. Sukanya Das, TERI School of Advanced Studies, New Delhi
+5. Pranabendu Misra, Chennai Mathematical Institute
+6. Madhavan Mukund, Chennai Mathematical Institute
+7. Areejit Samal, IMSc, Chennai
+8. Ramaseshan Ramachandran, Chennai Mathematical Institute
+9. Suchitra Karunkaran, AlgoLabs, Chennai
+---
+
 ## Licence
 
 This code is released under the **MIT Licence**. See [LICENSE](LICENSE) for details.
