@@ -181,7 +181,7 @@ FAISS is MIT licensed.
 If you use this toolkit in your research, please cite:
 
 ```bibtex
-@misc{india-health-nlp-2025,
+@misc{india-health-ai-2026,
    title  = {Open Health Economics Infrastructure for India: FAIR Datasets and Domain-Specific Small Language Models},
   author = {Bhoumik, Amiya R.; and Chakraborti, Anirban; and Das, Sourish; and Das, Sukanya; and Misra, Pranabendu; and Mukund, Madhavan; and Samal, Areejit},
   year   = {2026},
