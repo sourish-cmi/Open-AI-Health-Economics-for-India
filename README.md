@@ -105,3 +105,25 @@ If you already have a `extracted_chunks.csv` from Notebook 1, you can run Notebo
 The fine-tuning result (26.7%) demonstrates that a minimum labelled corpus of ~1,000 samples per class is required for effective SLM adaptation — a finding that motivates the data collection work in this project.
 
 ---
+## Data sources
+
+This toolkit is designed to work with publicly available Indian health datasets:
+
+- [NFHS-5 (2019–21)](http://rchiips.org/nfhs/nfhs5.shtml) — National Family Health Survey
+- [NFHS-4 (2015–16)](http://rchiips.org/nfhs/nfhs4.shtml) — National Family Health Survey
+- [Ayushman Bharat PM-JAY](https://pmjay.gov.in) — Health insurance scheme reports
+- [National Health Accounts](https://mohfw.gov.in) — Ministry of Health and Family Welfare
+
+> **Note on data:** NFHS microdata requires registration at [DHS Program](https://dhsprogram.com). The PDF reports are publicly available without registration.
+> **Current version is developed on NFHS-4 and NFH-5 dataset.**
+---
+## Project structure
+
+```
+├── Notebook_1_Data_Pipeline.ipynb                              # PDF ingestion and chunking
+├── Notebook_2_SLM_Finetuning.ipynb                             # LoRA fine-tuning experiment
+├── Notebook_3_SLM_Few_Shot_Learning.ipynb                      # Few-shot evaluation
+├── Notebook_4_Chatbot_Demo_for_Document_Classifier.ipynb       # Document classifier demo
+├── Notebook_5_Conversational_Chatbot.ipynb                     # Conversational RAG chatbot
+└── README.md
+```
