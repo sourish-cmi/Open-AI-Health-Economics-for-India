@@ -62,3 +62,34 @@ The classifier assigns health document passages to one of 8 thematic categories:
 | OCR fallback | `pytesseract` | latest | Apache 2.0 |
 
 ---
+
+## Getting started
+
+### Requirements
+
+- Google Colab Pro with A100 GPU (40 GB VRAM)
+- Google Drive with at least 10 GB free
+- NFHS or other Indian health PDF documents to index
+
+### Running order
+
+Run the notebooks in sequence:
+
+```
+Notebook 1  →  Notebook 3  →  Notebook 4   (document classifier demo)
+                          ↘
+                           Notebook 5       (RAG chatbot)
+```
+
+Notebook 2 is standalone and documents the fine-tuning experiment.
+
+### Quick start — RAG chatbot only
+
+If you already have a `extracted_chunks.csv` from Notebook 1, you can run Notebook 5 directly:
+
+1. Upload `extracted_chunks.csv` to `MyDrive/ANRF_Call/PoC/data/`
+2. Open `Notebook_5_RAG_Chatbot.ipynb` in Colab
+3. Set runtime to A100 GPU
+4. Run all cells — a public Gradio link appears at the end
+
+---
