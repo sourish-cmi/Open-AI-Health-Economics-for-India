@@ -32,3 +32,33 @@ This toolkit provides:
 
 ---
 
+## Document categories
+
+The classifier assigns health document passages to one of 8 thematic categories:
+
+1. Child Health and Nutrition
+2. Maternal Health
+3. Nutrition and Biomarkers
+4. Survey Methodology and Metadata
+5. HIV/AIDS and Sexual Health
+6. Sociodemographic and Household
+7. Family Planning and Fertility
+8. Women's Empowerment and Gender
+
+---
+
+## Technology stack
+
+| Component | Library | Version | Licence |
+|---|---|---|---|
+| Language model | `transformers` | 4.44.0 | Apache 2.0 |
+| SLM | Phi-3.5-mini-instruct | 3.8B params | MIT |
+| LoRA fine-tuning | `peft` | latest | Apache 2.0 |
+| Sentence embeddings | `sentence-transformers` | latest | Apache 2.0 |
+| Embedding model | all-MiniLM-L6-v2 | 22M params | Apache 2.0 |
+| Vector search | `faiss-cpu` | latest | MIT |
+| Demo interface | `gradio` | latest | Apache 2.0 |
+| PDF extraction | `pdfplumber` | latest | MIT |
+| OCR fallback | `pytesseract` | latest | Apache 2.0 |
+
+---
