@@ -127,3 +127,62 @@ This toolkit is designed to work with publicly available Indian health datasets:
 ├── Notebook_5_Conversational_Chatbot.ipynb                     # Conversational RAG chatbot
 └── README.md
 ```
+Data and model files are stored in Google Drive and are not committed to this repository.
+
+---
+
+## Known issues and limitations
+
+- **Accuracy ceiling:** 53.3% few-shot accuracy reflects the difficulty of fine-grained thematic classification on domain-specific text without a large labelled corpus. A labelled dataset of 5,000+ examples is expected to push accuracy above 80%.
+- **Scanned PDFs:** OCR quality varies. Tesseract performs well on clean scans but degrades on low-resolution or multi-column layouts.
+- **Context window:** The RAG prompt is capped at 3,072 tokens. Very long questions with extensive chat history may truncate retrieved passages.
+- **Colab session limits:** Colab Pro sessions disconnect after 12–24 hours. The FAISS index is saved to Drive and reloads instantly on reconnect.
+
+---
+
+## Contributing
+
+Contributions are welcome. Priority areas:
+
+- Additional Indian health document sources (ICMR, State Health Accounts, NSSO)
+- Improved OCR pipeline for regional language documents
+- Hindi and other Indic language support
+- Evaluation on larger held-out test sets
+
+Please open an issue before submitting a pull request.
+
+---
+
+## Licence
+
+This code is released under the **MIT Licence**. See [LICENSE](LICENSE) for details.
+
+The base model (`microsoft/Phi-3.5-mini-instruct`) is also MIT licensed.
+Sentence embedding model (`all-MiniLM-L6-v2`) is Apache 2.0.
+FAISS is MIT licensed.
+
+---
+
+## Citation
+
+If you use this toolkit in your research, please cite:
+
+```bibtex
+@misc{india-health-nlp-2025,
+   title  = {Open Health Economics Infrastructure for India: FAIR Datasets and Domain-Specific Small Language Models},
+  author = {Bhoumik, Amiya R.; and Chakraborti, Anirban; and Das, Sourish; and Das, Sukanya; and Misra, Pranabendu; and Mukund, Madhavan; and Samal, Areejit},
+  year   = {2026},
+  note   = {AI for Science},
+  url     = {https://github.com/sourish-cmi/Open-AI-Health-Economics-for-India},
+  licence = {MIT}
+}
+```
+
+---
+
+## Acknowledgements
+
+- [Microsoft Research](https://huggingface.co/microsoft) for Phi-3.5-mini-instruct
+- [HuggingFace](https://huggingface.co) for the Transformers and PEFT libraries
+- [Meta AI](https://github.com/facebookresearch/faiss) for FAISS
+- [International Institute for Population Sciences](http://rchiips.org) for NFHS data
