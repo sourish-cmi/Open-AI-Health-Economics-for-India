@@ -33,7 +33,7 @@ This toolkit provides:
 ---
 ## Demo on YouTube
 
-[![Watch Video]](https://youtu.be/e7eBdEUfBHY)
+[![Watch Video](https://img.youtube.com/vi/e7eBdEUfBHY/maxresdefault.jpg)](https://youtu.be/e7eBdEUfBHY)
 
 ---
 ## Document categories
