@@ -31,7 +31,11 @@ This toolkit provides:
 | `Notebook_5_Conversational_Chatbot.ipynb` | Conversational RAG chatbot over the document corpus | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/18mKPaMZrxpiz__6xmzCEgUx-kWHKU357/view?usp=sharing) |
 
 ---
+## Demo on YouTube
 
+[![Watch Video](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://youtu.be/e7eBdEUfBHY)
+
+---
 ## Document categories
 
 The classifier assigns health document passages to one of 8 thematic categories:
